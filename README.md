@@ -26,6 +26,10 @@ Output: Kendall¡¯s tau, Spearman¡¯s rho and tail dependence matrix contour p
 ```
 
 ![Picture1](Gaussian1.png)      ![Picture1](Gaussian2.png)     ![Picture1](Gaussian3.png)
+![Picture1](Student_t1.png)     ![Picture1](Student_t2.png)    ![Picture1](Student_t3.png)
+![Picture1](Clayton1.png)       ![Picture1](Clayton2.png)      ![Picture1](Clayton3.png)
+![Picture1](Gumbel1.png)        ![Picture1](Gumbel2.png)       ![Picture1](Gumbel3.png)
+
 
 
 ```r

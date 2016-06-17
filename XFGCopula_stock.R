@@ -83,7 +83,7 @@ for (i in 1:10) {
     }
 }
 
-# correlation parameter estimates(delta and Kendall¡¯s tau) using Clayton Copula
+# correlation parameter estimates(delta and KendallÂ¡Â¯s tau) using Clayton Copula
 
 delta_clay = matrix(rep(0), nrow = 10, ncol = 10)
 tau_clay = matrix(rep(0), nrow = 10, ncol = 10)
@@ -112,7 +112,7 @@ for (i in 1:10) {
     }
 }
 
-# correlation parameter estimates(delta and Kendall¡¯s tau) using Gumbel Copula
+# correlation parameter estimates(delta and KendallÂ¡Â¯s tau) using Gumbel Copula
 
 delta_gum = matrix(rep(0), nrow = 10, ncol = 10)
 tau_gum = matrix(rep(0), nrow = 10, ncol = 10)
@@ -154,7 +154,7 @@ cor(u1, method = "spearman")
 contour(tCopula(trho[1, 2], dim = 2, df = tdf[1, 2]), dCopula, main = "Student t")
 persp(tCopula(dim = 2, trho[1, 2], df = tdf[1, 2]), dCopula, phi = 15, theta = 30, main = "Student t")
 u2 = rCopula(3000, tCopula(dim = 2, trho[1, 2], df = tdf[1, 2]))
-plot(u2[, 1], u2[, 2], pch = ".", col = "blue", main = "Student t", xlab = "u1", ylab = "u2")  # Looks good - our correlation was about 0.6
+plot(u2[, 1], u2[, 2], pch = ".", col = "blue", main = "Student t", xlab = "u1", ylab = "u2")  
 cor(u2, method = "spearman")
 
 # Create a contour plot,a perspective plot and a scatter plot for the Clayton Copula

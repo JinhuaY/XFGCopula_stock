@@ -25,7 +25,7 @@ Datafile: stock10.csv
 
 Input: Prices of 10 Internet and Software stocks in S&P500 (time period: 2015/05/01-2016/04/25)
 
-Output: 'Kendall¡'s tau, Spearman¡'s rho and tail dependence matrix contour plot, perspective 
+Output: 'Kendall¡`s tau, Spearman¡`s rho and tail dependence matrix contour plot, perspective 
 plot and scatter plot for each simulated copula'
 
 ```

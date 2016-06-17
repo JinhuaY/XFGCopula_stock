@@ -9,10 +9,7 @@ Name of Quantlet: XFGCopula_stock
 
 Published in: has not been published
 
-Description: Uses four types of copula (Gaussian, t, Clayton and Gumbel) to fit returns of 10 Internet and Software stocks
-in S&P500 (time period: 2015/05/01-2016/04/25), computes the Kendall¡¯s tau, Spearman¡¯s rho and tail dependence matrix of
-corresponding estimated copula. Simulates these four types of copula and creates contour plot, perspective plot and scatter
-plot for each copula.
+Description: 'Uses four types of copula (Gaussian, t, Clayton and Gumbel) to fit returns of 10 Internet and Software stocks in S&P500 (time period: 2015/05/01-2016/04/25), computes the Kendall¡¯s tau, Spearman¡¯s rho and tail dependence matrix of corresponding estimated copula. Simulates these four types of copula and creates contour plot, perspective plot and scatter plot for each copula.'
 
 Keywords: copula, Gaussian, Student t, Clayton, Gumbel
 

@@ -25,8 +25,8 @@ Datafile: stock10.csv
 
 Input: Prices of 10 Internet and Software stocks in S&P500 (time period: 2015/05/01-2016/04/25)
 
-Output: Kendall¡¯s tau, Spearman¡¯s rho and tail dependence matrix contour plot, perspective plot and scatter plot for each
-simulated copula
+Output: Kendall¡¯s tau, Spearman¡¯s rho and tail dependence matrix contour plot, perspective 
+plot and scatter plot for each simulated copula
 
 ```
 
@@ -195,7 +195,7 @@ cor(u1, method = "spearman")
 contour(tCopula(trho[1, 2], dim = 2, df = tdf[1, 2]), dCopula, main = "Student t")
 persp(tCopula(dim = 2, trho[1, 2], df = tdf[1, 2]), dCopula, phi = 15, theta = 30, main = "Student t")
 u2 = rCopula(3000, tCopula(dim = 2, trho[1, 2], df = tdf[1, 2]))
-plot(u2[, 1], u2[, 2], pch = ".", col = "blue", main = "Student t", xlab = "u1", ylab = "u2")  # Looks good - our correlation was about 0.6
+plot(u2[, 1], u2[, 2], pch = ".", col = "blue", main = "Student t", xlab = "u1", ylab = "u2")  
 cor(u2, method = "spearman")
 
 # Create a contour plot,a perspective plot and a scatter plot for the Clayton Copula

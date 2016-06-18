@@ -147,7 +147,7 @@ for (i in 1:10) {
         tau_clay[i, j] = delta_clay[i, j]/(delta_clay[i, j] + 2)
         tau_clay[j, i] = tau_clay[i, j]
         
-        tail_Lower[i, j] = 2^(1/delta_clay[i, j])
+        tail_Lower[i, j] = 2^(-1/delta_clay[i, j])
         tail_Lower[j, i] = tail_Lower[i, j]
         
     }

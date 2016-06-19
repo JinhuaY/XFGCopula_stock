@@ -5,7 +5,7 @@
 
 ```yaml
 
-Name of Quantlet: XFGCopula_stock
+Name of QuantLet: XFGCopula_stock
 
 Published in: has not been published
 
@@ -18,8 +18,6 @@ scatter plot for each copula.'
 Keywords: copula, Gaussian, Student t, Clayton, Gumbel
 
 Author: Jinhua Yang
-
-Submitted:  Wed, June 15 2016 by Jinhua Yang
 
 Datafile: stock10.csv
 

@@ -122,7 +122,7 @@ for (i in 1:10) {
     }
 }
 
-# correlation parameter estimates(delta and Kendall¡¯s tau) using Clayton Copula
+# correlation parameter estimates(delta and Kendall''s tau) using Clayton Copula
 
 delta_clay = matrix(rep(0), nrow = 10, ncol = 10)
 tau_clay = matrix(rep(0), nrow = 10, ncol = 10)
@@ -151,7 +151,7 @@ for (i in 1:10) {
     }
 }
 
-# correlation parameter estimates(delta and Kendall¡¯s tau) using Gumbel Copula
+# correlation parameter estimates(delta and Kendall''s tau) using Gumbel Copula
 
 delta_gum = matrix(rep(0), nrow = 10, ncol = 10)
 tau_gum = matrix(rep(0), nrow = 10, ncol = 10)

@@ -210,4 +210,15 @@ u3 = rCopula(3000, gumbelCopula(dim = 2, delta_gum[1, 2]))
 plot(u3[, 1], u3[, 2], pch = ".", col = "blue", main = "Gumbel", xlab = "u1", ylab = "u2")
 cor(u3, method = "spearman")
 
+
+# compute portfolio VaR using simulation of Gaussian copula
+normrho1 = c(normrho[1, 2:10], normrho[2, 3:10], normrho[3, 4:10], normrho[4, 5:10], normrho[5, 
+    6:10], normrho[6, 7:10], normrho[7, 8:10], normrho[8, 9:10], normrho[9, 10])
+a = normalCopula(param = normrho1, dim = 10, dispstr = "un")
+simunorm = rCopula(1000, copula = a)
+b = qnorm(simunorm, mean = 0, sd = 1)
+c = b + matrix(rep(mean, 1000), ncol = ncol(mean), byrow = TRUE)
+portfolio = c %*% W
+PVaRnorm = quantile(portfolio, probs = c(0.01, 0.05))
+
 ```

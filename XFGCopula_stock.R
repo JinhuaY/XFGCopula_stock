@@ -83,7 +83,7 @@ for (i in 1:10) {
     }
 }
 
-# correlation parameter estimates(delta and Kendall¡¯s tau) using Clayton Copula
+# correlation parameter estimates(delta and KendallÂ¡Â¯s tau) using Clayton Copula
 
 delta_clay = matrix(rep(0), nrow = 10, ncol = 10)
 tau_clay = matrix(rep(0), nrow = 10, ncol = 10)
@@ -112,7 +112,7 @@ for (i in 1:10) {
     }
 }
 
-# correlation parameter estimates(delta and Kendall¡¯s tau) using Gumbel Copula
+# correlation parameter estimates(delta and KendallÂ¡Â¯s tau) using Gumbel Copula
 
 delta_gum = matrix(rep(0), nrow = 10, ncol = 10)
 tau_gum = matrix(rep(0), nrow = 10, ncol = 10)
@@ -132,14 +132,15 @@ for (i in 1:10) {
         delta_gum[i, j] = unname(coef(gumfit))
         delta_gum[j, i] = delta_gum[i, j]
         
-        tau_gum[i, j] = delta_gum[i, j]/(delta_gum[i, j] + 2)
+        tau_gum[i, j] = 1-1/delta_gum[i, j]
         tau_gum[j, i] = tau_gum[i, j]
         
-        tail_upper[i, j] = 2^(1/delta_gum[i, j])
+        tail_upper[i, j] = 2-2^(1/delta_gum[i, j])
         tail_upper[j, i] = tail_upper[i, j]
         
     }
 }
+
 
 # copula simulation
 

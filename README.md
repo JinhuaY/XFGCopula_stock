@@ -171,10 +171,10 @@ for (i in 1:10) {
         delta_gum[i, j] = unname(coef(gumfit))
         delta_gum[j, i] = delta_gum[i, j]
         
-        tau_gum[i, j] = delta_gum[i, j]/(delta_gum[i, j] + 2)
+        tau_gum[i, j] = 1-1/delta_gum[i, j]
         tau_gum[j, i] = tau_gum[i, j]
         
-        tail_upper[i, j] = 2^(1/delta_gum[i, j])
+        tail_upper[i, j] = 2-2^(1/delta_gum[i, j])
         tail_upper[j, i] = tail_upper[i, j]
         
     }
